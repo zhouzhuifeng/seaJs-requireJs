@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+   
+    <!-- <script src="node_modules/jquery/dist/jquery.js"></script> -->
+</head>
+
+<body>
+    <div id="qq">
+        天气不错
+    </div>
+     <a href="jumb.html" id="zz">我是跳转链接</a>
+      <script src="node_modules/sea.js/sea.js"></script>
+    <script>
+        seajs.config({
+            // 根路径
+            base: './node_modules/jquery/dist/',
+            // 别名配置
+            alias: {
+                'jquery': 'jquery.js'
+            }
+        });
+        // use支持数组形式  use['./a','./b']
+        seajs.use('jquery')
+        seajs.use('./index.js')
+        // seajs.use('./jumb.js')
+    </script>
+</body>
+
+</html>
